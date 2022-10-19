@@ -4,6 +4,7 @@ class PrintEditionItem {
     this.releaseDate = releaseDate;
     this.pagesCount = pagesCount;
     this.state = state;
+    this.type = type;
   }
   fix(){
     this.state = this.state * 1.5;
