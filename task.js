@@ -21,3 +21,39 @@ class PrintEditionItem {
     return this._state;
   }
 }
+let one = new PrintEditionItem();
+
+class Magazine extends PrintEditionItem {
+  constructor(type = "magazine"){
+    super();
+    this.type = type;
+  }  
+}
+
+
+class Book extends PrintEditionItem {
+  constructor(type, author){
+    super();
+    this.type = "book";
+    this.author = author;
+  }
+}
+class NovelBook extends Book {
+  constructor(){
+    super();
+    this.type = "novel";
+  }
+}
+class FantasticBook extends Book {
+  constructor(){
+    super();
+    this.type = "fantastic";
+  }
+}
+
+class DetectiveBook extends Book {
+  constructor() {
+    super();
+    this.type = "detective";
+  }
+}
